@@ -11,7 +11,7 @@ import EventBind from './Components/EventBind'
 import ParentComponent from './Components/ParentComponent'
 import ChildComponent from './Components/ChildComponent'
 import UserGreeting from './Components/UserGreeting'
-
+import NameList from './Components/NameList'
 
 
 
@@ -34,8 +34,8 @@ function App() {
 
    {/* <ParentComponent></ParentComponent> */}
 
-    <UserGreeting></UserGreeting>
-
+    {/* <UserGreeting></UserGreeting> */}
+    <NameList/>
     {/* <Hello></Hello> */}
 
      {/* <Counter/>*/}
