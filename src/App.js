@@ -12,9 +12,10 @@ import ParentComponent from './Components/ParentComponent'
 import ChildComponent from './Components/ChildComponent'
 import UserGreeting from './Components/UserGreeting'
 import NameList from './Components/NameList'
-
-
-
+import StyleSheet from './Components/StyleSheet'
+import Inline from './Components/Inline'
+import './appStyles.css'
+import  styles from './appStyles.module.css'
 function App() {
   return (
     <div className="App">
@@ -35,13 +36,15 @@ function App() {
    {/* <ParentComponent></ParentComponent> */}
 
     {/* <UserGreeting></UserGreeting> */}
-    <NameList/>
+    {/* <NameList/> */}
     {/* <Hello></Hello> */}
 
      {/* <Counter/>*/}
      {/* <Message/> */}
-    
-    
+    {/* <StyleSheet primary={true}></StyleSheet> */}
+    {/* <Inline/> */}
+    <h1 className='error'>Error</h1>
+    <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
