@@ -47,7 +47,7 @@ class Form extends Component{
 
               <div>
                   <label>Topic</label>
-                  <select valu={this.state.topic} onChange={this.handleTopicChange}>
+                  <select value={this.state.topic} onChange={this.handleTopicChange}>
                       <option value="react">React</option>
                       <option value="Angular">Angular</option>
                       <option value="Vue">Vue</option>
