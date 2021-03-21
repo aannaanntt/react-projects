@@ -16,6 +16,9 @@ import StyleSheet from './Components/StyleSheet'
 import Inline from './Components/Inline'
 import './appStyles.css'
 import  styles from './appStyles.module.css'
+import Form from './Components/Form'
+
+
 function App() {
   return (
     <div className="App">
@@ -43,8 +46,11 @@ function App() {
      {/* <Message/> */}
     {/* <StyleSheet primary={true}></StyleSheet> */}
     {/* <Inline/> */}
-    <h1 className='error'>Error</h1>
-    <h1 className={styles.success}>Success</h1>
+    {/* <h1 className='error'>Error</h1>
+    <h1 className={styles.success}>Success</h1> */}
+    
+    <Form/>
+    
     </div>
   );
 }
