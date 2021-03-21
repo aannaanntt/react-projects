@@ -18,7 +18,8 @@ import './appStyles.css'
 import  styles from './appStyles.module.css'
 import Form from './Components/Form'
 import LifeCycleA from './Components/LifeCycleA'
-
+import Hero from './Components/Hero'
+import ErrorBoundary from './Components/ErrorBoundary'
 function App() {
   return (
     <div className="App">
@@ -51,8 +52,19 @@ function App() {
     
     {/* <Form/> */}
 
-    <LifeCycleA></LifeCycleA>
-    
+    {/* <LifeCycleA></LifeCycleA> */}
+    <ErrorBoundary>
+    <Hero heroName='SuperMan'></Hero>
+    </ErrorBoundary> 
+    <ErrorBoundary>
+    <Hero heroName='BatMan'></Hero>
+    </ErrorBoundary> 
+    <ErrorBoundary>
+    <Hero heroName='Joker'></Hero>
+    </ErrorBoundary> 
+    <ErrorBoundary>
+    <Hero heroName='Heath'></Hero>   
+    </ErrorBoundary> 
     </div>
   );
 }
